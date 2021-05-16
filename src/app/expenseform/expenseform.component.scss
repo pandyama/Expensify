@@ -1,0 +1,67 @@
+.balance {
+  background-color: #d3d3d3;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.input {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  label {
+    font-size: 20px;
+    margin: 2px;
+  }
+  input {
+    margin-right: 20px;
+    width: 10%;
+    font-family: "Palanquin", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  select {
+    font-family: "Palanquin", sans-serif;
+  }
+  button {
+    font-family: "Palanquin", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #d3d3d3;
+  }
+  button:hover {
+    background-color: rgb(141, 141, 141);
+    color: white;
+  }
+}
+
+.surplus {
+  background-color: lightblue;
+  color: black;
+  height: 20vh;
+  position: relative;
+  padding: 20px;
+  font-size: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+}
+
+.deficit {
+  background-color: lightcoral;
+  color: black;
+  height: 100vh;
+  padding: 40px;
+  font-size: 30px;
+  div {
+    float: right;
+    p {
+      margin: 0;
+    }
+  }
+
+}

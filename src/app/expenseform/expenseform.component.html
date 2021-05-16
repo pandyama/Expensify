@@ -1,0 +1,29 @@
+<div class="balance">
+    <span>
+        Balance {{balance}}
+    </span>
+</div>
+<section class="input">
+    <div class="userData">
+        <label>Expense/Income Name</label>
+        <input type="text">
+        <label>Amount</label>
+        <input type="number">
+        <label>Type</label>
+        <select name="amountType">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+    </div>
+    <button>Add Item</button>
+</section>
+<section class="surplus">
+    <span> Income {{income}}</span>
+</section>
+<section class="deficit">
+    <div>
+        <p> {{expense}} -{{amount}}</p>
+        <p> Phone -60</p>
+        <p> Grocery -110</p>
+    </div>
+</section>
