@@ -45,6 +45,7 @@ export class ExpenseformComponent implements OnInit {
 
    addItem(){
      this.items.push(this.newItem());
+     console.log(this.expenseForm.controls['items2']);
    }
 
   ngOnInit() {
