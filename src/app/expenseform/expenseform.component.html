@@ -4,18 +4,26 @@
     </span>
 </div>
 <section class="input">
-    <div class="userData">
-        <label>Expense/Income Name</label>
-        <input type="text">
-        <label>Amount</label>
-        <input type="number">
-        <label>Type</label>
-        <select name="amountType">
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
-          </select>
-    </div>
-    <button>Add Item</button>
+    <form [formGroup]="expenseForm">
+        <div formArrayName="items2" >
+            <div *ngFor="let s of items.controls; let i = index">
+                <div [formGroupName]="i" class="userData">
+                    <label>Expense/Income Name</label>
+                    <input type="text" formControlName="itemName">
+                    <label>Amount</label>
+                    <input type="number" formControlName="itemAmount">
+                    <label>Type</label>
+                    <select name="amountType">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                      </select>
+                    <button class="remove" (click)="removeDevice(i)">X</button>
+                </div>
+            </div>
+        </div>
+        <button class="add" (click)="addItem()">Add</button>
+    </form>
+    <button >Submit Form</button>
 </section>
 <section class="surplus">
     <span> Income {{income}}</span>

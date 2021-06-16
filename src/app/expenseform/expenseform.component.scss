@@ -1,3 +1,33 @@
+button {
+  font-family: "Palanquin", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #d3d3d3;
+}
+button:hover {
+  background-color: rgb(141, 141, 141);
+  color: white;
+}
+label {
+  font-size: 20px;
+  margin: 2px;
+}
+input {
+  margin: 20px;
+  width: 10%;
+  font-family: "Palanquin", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+select {
+  font-family: "Palanquin", sans-serif;
+  font-size: 18px;
+}
+
 .balance {
   background-color: #d3d3d3;
   height: 200px;
@@ -9,39 +39,35 @@
 
 .input {
   background-color: white;
-  padding: 30px;
   text-align: center;
-  label {
-    font-size: 20px;
-    margin: 2px;
-  }
-  input {
-    margin-right: 20px;
-    width: 10%;
-    font-family: "Palanquin", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  select {
-    font-family: "Palanquin", sans-serif;
-  }
-  button {
-    font-family: "Palanquin", sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 6px;
-    padding: 5px;
-    background-color: #d3d3d3;
-  }
-  button:hover {
-    background-color: rgb(141, 141, 141);
+  .remove {
+    background-color: red;
     color: white;
+    font-family: "Palanquin", sans-serif;
+    font-weight: bold;
+    margin-left: 13px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 17px;
   }
+}
+
+.add {
+  background-color: blue;
+  color: white;
+  font-family: "Palanquin", sans-serif;
+  font-weight: bold;
+  margin-left: 13px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 17px;
 }
 
 .surplus {
   background-color: lightblue;
+  margin-top: 10px;
   color: black;
   height: 20vh;
   position: relative;
@@ -63,5 +89,4 @@
       margin: 0;
     }
   }
-
 }
